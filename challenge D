@@ -1,6 +1,17 @@
 use_bpm 136
 use_synth :piano
 
+define :krustycrew do
+  play :r
+  sleep 1
+  play:E4
+  play:Gs4
+  sleep 2
+  play:E5
+  play:Gs4
+  sleep 1
+end
+
 define :sponge do
   play :r
   sleep 1
@@ -89,7 +100,7 @@ live_loop:background_notes do
 end
 
 # Measure 1
-sponge
+krustycrew
 
 # Measure 2
 sponge
