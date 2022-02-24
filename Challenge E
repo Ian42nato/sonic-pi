@@ -3,81 +3,62 @@ use_synth :chipbass
 
 # VARIABLES TO STORE SAMPLES
 sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/mario_intro.wav"
+sleep 8
 
 
-live_loop :mario do
-  1.times do
-    sleep 16
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
-    sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
-    sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
-    sleep 1
-    sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
+# INTRO
+play :e4
+sleep 0.5
+play :e4
+sleep 1
+play :e4
+sleep 1
+play :c4
+sleep 0.5
+play :e4
+sleep 1
+play :g4
+sleep 2
+play :g3
+sleep 2
+
+live_loop :theme do
+  4.times do
+    # PART ONE
+    play :c4
     sleep 1.5
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
-    sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
-    sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
-    sleep 1
-    sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
+    play :g3
     sleep 1.5
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
-    sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
-    sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
-    sleep 1
-    sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
+    play :e3
     sleep 1.5
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
+    play :a3
     sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+    play :b3
     sleep 1
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+    play :bb3
+    sleep 0.5
+    play :a3
     sleep 1
-    sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
   end
   stop
 end
 
-# INTRO
-sleep 8
-play :e4
-sleep 0.5
-play :e4
-sleep 1
-play :e4
-sleep 1
-play :c4
-sleep 0.5
-play :e4
-sleep 1
-play :g4
-sleep 2
-play :g3
-sleep 2
-
-
-# PART ONE
-play :c4
-sleep 1.5
-play :g3
-sleep 1.5
-play :e3
-sleep 1.5
-play :a3
-sleep 1
-play :b3
-sleep 1
-play :bb3
-sleep 0.5
-play :a3
-sleep 1
+live_loop :mario do
+  4.times do
+    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
+    sleep 1.75
+    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+    sleep 1.75
+    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+    sleep 1.75
+    sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
+    sleep 2.25
+  end
+  stop
+end
 
 #PART TWO
+sleep 32
 play :g3
 sleep 2/3.0 #0.666666...
 play :e4
@@ -98,44 +79,6 @@ play :d4
 sleep 0.5
 play :b3
 sleep 1
-
-# PART THREE
-play :c4
-sleep 1.5
-play :g3
-sleep 1.5
-play :e3
-sleep 1.5
-play :a3
-sleep 1
-play :b3
-sleep 1
-play :bb3
-sleep 0.5
-play :a3
-sleep 1
-
-#PART FOUR
-play :g3
-sleep 2/3.0 #0.666666...
-play :e4
-sleep 2/3.0 #0.666666...
-play :g4
-sleep 2/3.0 #0.666666...
-play :a4
-sleep 1
-play :f4
-sleep 0.5
-play :g4
-sleep 1
-play :e4
-sleep 1
-play :c4
-sleep 0.5
-play :d4
-sleep 0.5
-play :b3
-sleep 1
-
 
 sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/oneup.wav"
+
