@@ -2,9 +2,13 @@ use_bpm 180
 use_synth :chipbass
 
 # VARIABLES TO STORE SAMPLES
-sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/mario_intro.wav"
-sleep 8
+intro = "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/mario_intro.wav"
+coin = "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+jump = "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
+pipe = "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
 
+sample intro
+sleep 8
 
 # INTRO
 play :e4
@@ -45,13 +49,13 @@ end
 
 live_loop :mario do
   4.times do
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/jump.wav"
+    sample jump
     sleep 1.75
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+    sample coin
     sleep 1.75
-    sample"C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/coin.wav"
+    sample coin
     sleep 1.75
-    sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/pipe.wav"
+    sample pipe
     sleep 2.25
   end
   stop
@@ -81,4 +85,3 @@ play :b3
 sleep 1
 
 sample "C:/Users/ian_fortunato/Downloads/mario_sounds-20220224T184016Z-001/mario_sounds/oneup.wav"
-
