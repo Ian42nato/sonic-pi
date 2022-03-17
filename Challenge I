@@ -1,0 +1,23 @@
+use_bpm 160
+use_synth :blade
+use_synth_defaults amp: 0.5
+
+define :four do |n1, n2, n3, n4|
+  play n1
+  sleep 0.5
+  play n2
+  sleep 0.5
+  play n3
+  sleep 0.5
+  play n4
+  sleep 0.5
+end
+
+four :c2, :e2, :g2, :b2
+four :c3, :b2, :g2, :e2
+four :c2, :e2, :g2, :b2
+four :c3, :b2, :g2, :e2
+four :c2, :e2, :g2, :b2
+four :c3, :b2, :g2, :e2
+four :c2, :e2, :g2, :b2
+four :c3, :b2, :g2, :e2
